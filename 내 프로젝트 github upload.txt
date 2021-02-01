@@ -21,7 +21,7 @@
    upload할 remote repository 주소 별명 설정
 
    git remote add origin https://github.com/ksoyoun02/Biz_2021_01_403_java.git
-
+   
 * github 업로드 금지 설정
 로컬 폴더에 .gitignore 파일 생성
 touch .gitignore
