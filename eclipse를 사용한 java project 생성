@@ -1,0 +1,50 @@
+eclipse를 사용한 java project 생성
+
+project생성
+	가. new / java project
+	-project 는 어플리케이션 이름
+	-영문, 숫자 등을 조합하여 만듬
+
+pakage 생성
+	가. 프로젝트 생성 후
+		최초 pakage생성
+
+	나. pakage 명명 방법
+		회사의 Domain Name을 
+		거꾸로 시작하여 작성
+		ex) https:// aaa.bbb.com 일때, com.bbb.aaa - 3단계 pakage 
+	다. 3단계 pakage를 base pakage라고 한다. 
+
+문법오류 : syntax error
+- java 문법규칙을 지키면서 
+코딩을 할때 대서문자, 빈칸, 
+세미콜론, 괄호 등이 규칙에 맞지 않을 때 eclipes는 자동으로
+감지를 하고 개발자에게 알려줌
+
+세팅
+데인져 어쩌고
+맨아래 델리트
+셀렉트안에있는 타입아이디 그대로 써줌
+밑에 활성화되면 누르고 다시 뉴 리파지토리
+
+
+
+
+로컬폴더 github와 연동
+1.초기화
+	git init
+2. 계정연결
+	git config --local user.name hyeonkyeong31
+	git config --local user.email j_tue@naver.com
+
+3. repository 주소연결
+	git remote add origin
+		http://github.com/hyeonkyeong31/Biz_403_01_java.git
+
+4. 로컬폴더 프로젝트 업로드 준비
+	git add . :현재 폴더의 모든것을 업로드하도록 압축
+5. 업로드 커맨드 설정
+	git commit -m first
+
+6. 압축된 로컬폴더를 업로드
+	git push -u origin master

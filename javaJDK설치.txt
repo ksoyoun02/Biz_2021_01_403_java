@@ -1,0 +1,17 @@
+1.Java개발자용 도구 설치
+	(Java Developer Tools Install)
+
+	2. oracle.com 에 접속, JDK 파일 다운로드
+	현재 최신 : JDK 15.xx
+
+3. JDK 설치 : 파일 더블클릭
+4.JDK 설치위치 확인
+	c:/program flies/java/jdk-15.x.x/bin
+
+5. JDK bin 주소복사해오기
+	C:\Program Files\Java\jdk-15.0.2\bin
+6. 윈도우 환경설정
+	가. 내pc/속성/고급시스템 설정/ 환경변수 / 시스템 변수 
+	나. path 변수 찾기 / 편집 / 새로만들기 / 5번 경로 붙여넣기 / 
+
+7. 윈도우 cmd에 java검색 후 에러 나는지 확인. ex.명령없음
