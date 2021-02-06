@@ -15,7 +15,7 @@ public class Logic_03 {
 		
 		/*
 		 * boolean
-		 * true, flase 의 값을 갖는 데이터형
+		 * true, false 의 값을 갖는 데이터형
 		 * boolean type, 블린형(타입)		
 		 */
 		
@@ -24,7 +24,7 @@ public class Logic_03 {
 		// boolean 값에 따라 코드의 흐름을 제어(변경 등)
 		// 명령어
 		
-		// 명령어가 true이면 연산식을 수행하고, flase면 무시하라
+		// 명령어가 true이면 연산식을 수행하고, false면 무시하라
 		
 		/*
 		 * 만약 num1 변수에 담긴값이 10보다 크면

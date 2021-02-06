@@ -6,7 +6,7 @@ public class Logic_02 {
 		
 		// 3과 3이 같은가 판단하고 그 값을 bYes에 담아라
 		// 불값, 논리연산결과를 담는 변수
-		// boolean : 자바가 시작할때 만들어짐 Booklean : 그 후 기능 추가
+		// boolean : 자바가 시작할때 만들어짐 Boolean : 그 후 기능 추가
 		boolean bYes = 3 == 3;
 		bYes = 3 > 3;
 		System.out.println(bYes);
