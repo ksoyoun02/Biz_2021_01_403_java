@@ -6,7 +6,7 @@ public class Odd_Eve_01 {
 
 		int intsum = 0;
 		// 0~99
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0 ; i < 100 ; i++) {
 			
 			int num = i + 1;
 			boolean bYes = num % 2 == 0;

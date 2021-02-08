@@ -6,7 +6,7 @@ public class Odd_Even_00 {
 		
 		int intsum = 0;
 		
-		for(int i = 0; i < 100 ; i++) {
+		for (int i = 0; i < 100 ; i++) {
 			
 			if( (i+1) % 2 == 0 ) {
 				
