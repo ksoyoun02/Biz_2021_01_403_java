@@ -1,5 +1,5 @@
 //정답
-package com.callor.start.jdk;
+package com.callor.start.jdk.random;
 
 import java.util.Random;
 
