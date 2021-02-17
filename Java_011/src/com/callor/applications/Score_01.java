@@ -18,8 +18,10 @@ public class Score_01 {
 		System.out.print("국어점수를 입력하세요 >> ");
 		
 		/* Blocking 되었다. Code Blocking
-		 * 
-		 * 
+		 * sacn.nextInt() 메서드를 호출하면
+		 * 코드 동작이 멈추고, 사용자가 키보드로
+		 * 무엇인가 입력한 후 Enter를 누를때까지
+		 * 이후 코드가 실행되지 않는다.
 		 */
 		int intKor = scan.nextInt();
 		
@@ -40,11 +42,35 @@ public class Score_01 {
 		intSum += intEng;
 		intSum += intMath;
 		
-		float fAve = intSum / 3.0f;
-		//float fAvg = intSum / 3;
-		//fAve = (float)intSum / 3;
-		//fAve = intSum / 3.0f;
-		//fAve = intSum /(float)3;
+		/* fAve 변수는 실수형이지만
+		 * intSum은 정수형, 3도 정수형이기 때문에
+		 * fAve 변수에 저장되는값은
+		 * 소수점 이하가 무조건 0으로 세팅된다
+		 */
+		float fAve = intSum / 3;
+		
+		/*
+		 * 결과값을 실수형(float, double)으로 하고자 할때는
+		 * intSum 변수값이나, 숫자 3을 실수형으로 만들어줘야한다
+		 */
+		
+		/*
+		 * 1. intSum을 실수형으로 변경하고 계산하기
+		 * 정수형 intSum에 담긴값을
+		 * float 형 값으로 강제 형변환하여
+		 * 나눗셈준비
+		 */
+		//fAve = (float)intSum / 3; //(double)intSum / 3
+		
+		/*
+		 * 2. 숫자 3을 실수형으로 만들어서 나눗셈
+		 * intSum을 실수 3.0f로 나눗셈을 지시하면
+		 * intSum변수에 담긴 값은
+		 * 자동형변환(자동으로 실수형으로 변환된다)
+		 */
+		fAve = intSum / 3.0f; //3.0d
+		//fAvg = intSum / (float)3;
+				
 		
 		System.out.print(intSum + "\t");
 		System.out.println(fAve);
