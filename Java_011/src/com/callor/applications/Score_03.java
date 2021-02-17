@@ -20,6 +20,7 @@ public class Score_03 {
 		// 전달하면 문법오류가 난다
 		scServiceV2.sum();
 		scServiceV2.sum(1, 2, 3, 4);
+		
 
 	}
 

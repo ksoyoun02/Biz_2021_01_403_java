@@ -60,6 +60,7 @@ public class Score_01 {
 		 * float 형 값으로 강제 형변환하여
 		 * 나눗셈준비
 		 */
+		
 		//fAve = (float)intSum / 3; //(double)intSum / 3
 		
 		/*
