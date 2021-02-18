@@ -22,7 +22,12 @@ public class ClassServiceV3 {
 	public void scope() {
 		System.out.println("숫자를 입력하세요");
 		int intNum1 = scan.nextInt();
+		
+		// method 선언 명령문에 void 키워드가 있으면
+		// 이 위치에 return 명령문이 있는 것과 같다
+		return;
 	}
+	
 	public void input() {
 		
 		System.out.print("숫자 1 입력 >> ");
