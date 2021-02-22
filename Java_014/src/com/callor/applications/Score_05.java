@@ -21,17 +21,17 @@ public class Score_05 {
 		float fAvg = 0f;
 		
 		for(int index = 0 ; index < intKor.length ; index++) {
-			int num = rnd.nextInt(100) + 1;
+			
 			
 			System.out.println(strName[index] + "의 점수");
 			
-			intKor[index] = rnd.nextInt(num);
+			intKor[index] = rnd.nextInt(100)+1;
 			System.out.println("국어점수 : " + intKor[index]);
 			
-			intEng[index] = rnd.nextInt(num);
+			intEng[index] = rnd.nextInt(100)+1;
 			System.out.println("영어점수 : " + intEng[index]);
 			
-			intMath[index] = rnd.nextInt(num);
+			intMath[index] = rnd.nextInt(100)+1;
 			System.out.println("수학점수 : " + intMath[index]);
 			
 		}
