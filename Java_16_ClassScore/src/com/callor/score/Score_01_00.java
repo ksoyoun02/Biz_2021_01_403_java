@@ -33,9 +33,9 @@ public class Score_01_00 {
 		// 총점
 		for(int i = 0 ; i < strName.length ; i ++) {
 			
-			intSum[i] += intKor[i];
+			intSum[i] = intKor[i];
 			intSum[i] += intEng[i];
-			intSum[i] = intMath[i];
+			intSum[i] += intMath[i];
 					
 		}
 		
