@@ -8,7 +8,6 @@ import com.callor.oop.model.CartVO;
 
 public class CartServiceV1 {
 
-	CartVO cartVO = new CartVO();
 	private List<CartVO> cartList = new ArrayList<CartVO>();
 
 	public void inputCart() {
