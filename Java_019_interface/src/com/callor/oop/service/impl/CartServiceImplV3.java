@@ -67,7 +67,7 @@ public class CartServiceImplV3 implements CartService {
 				try {
 					intPrice = Integer.valueOf(strPrice);
 					if (intPrice < 1) {
-						System.out.println("단가는 이상 입력하세요");
+						System.out.println("단가는 1000원 이상 입력하세요");
 					} else {
 						break;
 					}
