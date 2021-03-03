@@ -9,6 +9,7 @@ public class CartEx_01 {
 
 	public static void main(String[] args) {
 
+		// MenuService interface를 mService로 선언하고 MenuServiceV1을 호출하여 mService에 저장했다. 
 		MenuService mService = new MenuServiceV1();
 		CartService cService = new CartServiceV1();
 
