@@ -14,6 +14,8 @@ public class CartServiceV1 implements CartService {
 	private List<CartVO> cartList;
 	private Scanner scan;
 
+	// 선언하는 부분과 생성하는 부분을 분리하는 이유는 메모리 관리 때문!
+	// 선언과 동시에 초기화해도 문법상 상관없음
 	// 선언만 된 변수를 클래스 생성자에서 초기화
 	public CartServiceV1() {
 		cartList = new ArrayList<CartVO>();
@@ -29,29 +31,32 @@ public class CartServiceV1 implements CartService {
 		System.out.println("장바구니에 넣기");
 		System.out.println("---------------------------------------");
 
-		// 키보드에서 정보 받기
 		System.out.print("구매자 >> ");
+		// 키보드에서 정보를 받아 String변수인 strUserName에 저장
 		String strUserName = scan.nextLine();
 
 		System.out.print("상품명 >> ");
 		String strProductName = scan.nextLine();
 
+		// intPrice를 정수형 변수로 선언하고 초기화
 		int intPrice = 0;
 		while (true) {
 			System.out.print("단가 >> ");
 
-			// 문자열로 받을때 오류가 덜 생김
+			// 키보드로 입력한 값을 문자열로 받을때 오류가 덜 생김! (정보 교환 시)
 			String strPrice = scan.nextLine();
 
 			// 유효성검사
 			try {
+				// 문자열로 입력받은 strPrice를 Integer형으로 형변환해서 변수 intPrice에 값을 저장
 				intPrice = Integer.valueOf(strPrice);
 
-				//             ↓ 0보다는 확실하게 1로 비교하는게 좋다.
+				// ↓ 0보다는 확실하게 1로 비교하는게 좋다.
 				if (intPrice < 1) {
 					System.out.println("단가는 1 이상 입력하세요");
+					// continue를 써도 되지만 else입력이 더 코드를 단순하게 만든다, 굳이 코드를 길게 만들지 않도록 하기!
 				} else {
-					break;
+					break; // 1이상 입력했을 경우! break 하고 빠져나온다
 				}
 			} catch (Exception e) {
 				System.out.println("단가는 숫자로 입력해주세요");
@@ -73,16 +78,18 @@ public class CartServiceV1 implements CartService {
 			} catch (Exception e) {
 				System.out.println("수량은 숫자로 입력해주세요");
 			}
-		} // for end
+		}
 
-		// 입력받은 정보를 카트리스트에 추가
+		// cartVO로 CartVO를 초기화
 		CartVO cartVO = new CartVO();
+		// 입력받은 정보를 cartVO에 담기
 		cartVO.setUserName(strUserName);
 		cartVO.setProductName(strProductName);
 		cartVO.setPrice(intPrice);
 		cartVO.setQty(intQty);
 		cartVO.setTotal(intPrice * intQty);
 
+		// cartList에 입력받은 정보 추가
 		cartList.add(cartVO);
 	}
 
@@ -101,6 +108,7 @@ public class CartServiceV1 implements CartService {
 		for (int i = 0; i < nSize; i++) {
 			System.out.printf("%s\t%s\t%d\t%d\t%d\n", cartList.get(i).getUserName(), cartList.get(i).getProductName(),
 					cartList.get(i).getPrice(), cartList.get(i).getQty(), cartList.get(i).getTotal());
+			// 값은 for문이 반복할때마다 1씩증가 -> count 세기
 			intCount++;
 			totalPrice += cartList.get(i).getTotal();
 
@@ -129,6 +137,7 @@ public class CartServiceV1 implements CartService {
 		int nSize = cartList.size();
 		for (int i = 0; i < nSize; i++) {
 
+			// 키보드로 입력한 userName값과 cartList.get(i).getUserName()값이 같을때만 결과를 출력
 			if (cartList.get(i).getUserName().equals(userName)) {
 
 				System.out.printf("%s\t%s\t%d\t%d\t%d\n", cartList.get(i).getUserName(),
