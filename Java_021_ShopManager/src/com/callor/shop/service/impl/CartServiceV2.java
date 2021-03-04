@@ -8,19 +8,17 @@ import com.callor.shop.model.CartVO;
 import com.callor.shop.service.CartService;
 
 //CartService interface를 implements 하기
-public class CartServiceV1 implements CartService {
+public class CartServiceV2 implements CartService {
 
 	// 인스턴스 변수선언
 	private List<CartVO> cartList;
-	//"scanner class를 사용해서 scan 객체를 선언한것"
 	private Scanner scan;
 
 	// 선언하는 부분과 생성하는 부분을 분리하는 이유는 메모리 관리 때문!
 	// 선언과 동시에 초기화해도 문법상 상관없음
 	// 선언만 된 변수를 클래스 생성자에서 초기화
-	public CartServiceV1() {
+	public CartServiceV2() {
 		cartList = new ArrayList<CartVO>();
-		// "scan객체를 생성, 초기화"
 		scan = new Scanner(System.in);
 
 	}
@@ -53,7 +51,7 @@ public class CartServiceV1 implements CartService {
 				// 문자열로 입력받은 strPrice를 Integer형으로 형변환해서 변수 intPrice에 값을 저장
 				intPrice = Integer.valueOf(strPrice);
 
-				// ↓ 0보다는 확실하게 1로 비교하는게 좋다.
+				//               ↓ 0보다는 확실하게 1로 비교하는게 좋다.
 				if (intPrice < 1) {
 					System.out.println("단가는 1 이상 입력하세요");
 					// continue를 써도 되지만 else입력이 더 코드를 단순하게 만든다, 굳이 코드를 길게 만들지 않도록 하기!
@@ -118,7 +116,7 @@ public class CartServiceV1 implements CartService {
 
 		System.out.println("합계\t" + intCount + "가지\t\t\t" + totalPrice);
 	}
-
+ 
 	@Override
 	// 구매자별 장바구니 리스트 보기
 	public void printUserCart() {

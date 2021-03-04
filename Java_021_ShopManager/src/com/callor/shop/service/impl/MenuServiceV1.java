@@ -29,11 +29,15 @@ public class MenuServiceV1 implements MenuService {
 			System.out.println("=======================================");
 
 			System.out.print("선택 >> ");
+			// "키보드로 입력받은 값을 문자열 strMenu변수에 저장"
 			String strMenu = scan.nextLine();
 			
 			if (strMenu.equals("QUIT")) {
 				break;
 			}
+			
+			// Exception이 발생하지 않을 곳까지 try문을 사용하면
+			// 추후에 정작 중요한 오류를 잡지 못할수도있다.
 			try {
 				
 				// private으로 선언할때도 Integer로 해주는게 좋다

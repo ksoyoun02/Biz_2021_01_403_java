@@ -15,14 +15,14 @@ public class CartEx_01 {
 
 		while (true) {
 			Integer menu = mService.selectMenu();
-			if (menu == null) {
+			if (menu == null) { //mService의 selectMenu method에서 "QUIT" 값을 입력할 경우 break 하고 null값을 return 하기로 함
 				break;
 			} else if (menu == 1) {
 				cService.inputCart();
 			} else if (menu == 2) {
 				cService.printCart();
 			} else if (menu == 3) {
-				cService.printuserCart();
+				cService.printUserCart();
 			}
 		}
 

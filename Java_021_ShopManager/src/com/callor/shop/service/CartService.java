@@ -12,5 +12,5 @@ public interface CartService {
 	public void printCart();
 	
 	// 구매자별 장바구니 리스트
-	public void printuserCart();
+	public void printUserCart();
 }
