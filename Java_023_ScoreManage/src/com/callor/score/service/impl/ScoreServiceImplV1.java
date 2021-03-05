@@ -1,41 +1,66 @@
 package com.callor.score.service.impl;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import com.callor.score.model.ScoreVO;
 import com.callor.score.service.ScoreService;
 
 public class ScoreServiceImplV1 implements ScoreService {
 
-	private List<ScoreVO> scoreVO;
-	
+	private List<Integer> intList;
+	private String scoreFile;
+
 	public ScoreServiceImplV1() {
-		scoreVO = new ArrayList<ScoreVO>();
+
+		intList = new ArrayList<Integer>();
+		scoreFile = "src/com/callor/score/files/nums_rnd.txt";
+
 	}
-	
+
 	@Override
 	public void makeScore() {
 		Random rnd = new Random();
-		
-		
-		for(int i = 0 ; i < 20 ; i++) {
-			
-			scoreVO.get(i).setKor(rnd.nextInt(100)+1);
-			scoreVO.get(i).setEng(rnd.nextInt(100)+1);
-			scoreVO.get(i).setMath(rnd.nextInt(100)+1);
-			scoreVO.get(i).setMusic(rnd.nextInt(100)+1);
-			scoreVO.get(i).setHistory(rnd.nextInt(100)+1);
-					
+		for (int i = 0; i < 100; i++) {
+			Integer num = rnd.nextInt(100) + 1;
+			intList.add(num);
 		}
-		
-		
+
 	}
 
 	@Override
 	public void saveScoreToFile() {
 		// TODO Auto-generated method stub
+		FileWriter fileWriter = null;
+		PrintWriter printer = null;
+
+		try {
+			fileWriter = new FileWriter(scoreFile);
+			printer = new PrintWriter(fileWriter);
+
+			int nSize = intList.size();
+			for (int i = 0; i < nSize; i++) {
+				Integer n = intList.get(i);
+
+				printer.print(n + ":");
+
+				if ((i + 1) % 5 == 0) {
+					printer.println();
+				}
+			}
+
+			printer.close();
+			fileWriter.close();
+		}
+
+		catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+
+		}
 
 	}
 
