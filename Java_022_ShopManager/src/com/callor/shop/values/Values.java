@@ -1,4 +1,4 @@
-package com.callor.shop.velues;
+package com.callor.shop.values;
 
 public class Values {
 

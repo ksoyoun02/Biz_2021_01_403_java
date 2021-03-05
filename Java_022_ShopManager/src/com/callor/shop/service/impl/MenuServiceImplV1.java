@@ -3,7 +3,7 @@ package com.callor.shop.service.impl;
 import java.util.Scanner;
 
 import com.callor.shop.service.MenuService;
-import com.callor.shop.velues.Values;
+import com.callor.shop.values.Values;
 
 /*
  * Impl 접미사 : 인터페이스를 implements하여 생성한 클래스다 ~ 라는 걸 표시

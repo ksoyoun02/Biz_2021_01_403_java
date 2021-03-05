@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import com.callor.shop.model.CartVO;
 import com.callor.shop.service.CartService;
-import com.callor.shop.velues.Values;
+import com.callor.shop.values.Values;
 
 public class CartServiceImplV1 implements CartService {
 

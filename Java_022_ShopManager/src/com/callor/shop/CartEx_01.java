@@ -4,7 +4,7 @@ import com.callor.shop.service.CartService;
 import com.callor.shop.service.MenuService;
 import com.callor.shop.service.impl.CartServiceImplV1;
 import com.callor.shop.service.impl.MenuServiceImplV1;
-import com.callor.shop.velues.Values;
+import com.callor.shop.values.Values;
 
 public class CartEx_01 {
 
