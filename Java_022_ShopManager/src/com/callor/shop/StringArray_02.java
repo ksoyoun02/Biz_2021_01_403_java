@@ -14,7 +14,7 @@ public class StringArray_02 {
 		 * 	문자열 배열로 만들어 return 한다
 		 */
 		
-		// :을 기분으로 나누어서 저장해라 (문자열을 분해)
+		// :을 기준으로 나누어서 저장해라 (문자열을 분해)
 		// 배열 4개를 만든다음 cartList에 담는다
 		String[] cartList = strCart.split(":"); //{"홍길동","초코파이"
 		
