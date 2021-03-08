@@ -39,9 +39,9 @@ public class ScoreServiceImplV1 implements ScoreService {
 	@Override
 	public void makeScore() {
 		
-		// makeScore()는 호출된때마다 20개씩 데이터를
+		// makeScore()는 호출될때마다 20개씩 데이터를
 		// 생성하여 추가한다.
-		// 이전에 저장된 데이터가 있떠라도 계속 추가된다.
+		// 이전에 저장된 데이터가 있더라도 계속 추가된다.
 
 		/*
 		 * list.removal(위치주소)
@@ -70,7 +70,7 @@ public class ScoreServiceImplV1 implements ScoreService {
 			 */
 			
 			// format : 문자열로 만들어서 변수형에 담고 싶을때 사용
-			//							    ↓ 00001 ~ 000020 까지 번호를 만들어라
+			//							    ↓ 001 ~ 020 까지 번호를 만들어라
 			String strNum = String.format("2021%03d", i + 1);
 			
 			scoreVO.setStNum(strNum);;
@@ -186,6 +186,7 @@ public class ScoreServiceImplV1 implements ScoreService {
 			
 			
 		}
+		System.out.println(Values.dLine);
 		
 
 	}
