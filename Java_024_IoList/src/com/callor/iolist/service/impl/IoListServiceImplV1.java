@@ -106,9 +106,9 @@ public class IoListServiceImplV1 implements IoListService {
 	public void printList() {
 		// TODO Auto-generated method stub
 
-		System.out.println("=======================================");
+		System.out.println("===========================================================================================");
 		System.out.println("거래일자\t거래처\t상품이름\t매입금액\t판매금액");
-		System.out.println("---------------------------------------");
+		System.out.println("-------------------------------------------------------------------------------------------");
 
 		for (IoListVO vo : ioList) {
 			System.out.print(vo.getDate() + "\t");
@@ -125,7 +125,7 @@ public class IoListServiceImplV1 implements IoListService {
 
 			}
 		}
-		System.out.println("=========================================");
+		System.out.println("============================================================================================");
 
 	}
 
