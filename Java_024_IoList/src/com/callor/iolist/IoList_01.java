@@ -11,7 +11,7 @@ public class IoList_01 {
 		IoListService ioV1 = new IoListServiceImplV1();
 		
 		ioV1.loadList();
-		ioV1.saveList();
+		//ioV1.saveList();
 		ioV1.printList();
 		
 	}
