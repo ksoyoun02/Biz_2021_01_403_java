@@ -16,9 +16,9 @@ public class Ex_08 {
 		Random rnd = new Random();
 		int[] intNum = new int[100];
 
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < intNum.length; i++) {
 
-			intNum[i] = rnd.nextInt(100);
+			intNum[i] = rnd.nextInt(90) + 11;
 
 			int index = 0;
 			for (index = 2; index < intNum[i]; index++) {
@@ -28,13 +28,10 @@ public class Ex_08 {
 				}
 			}
 
-			if (index < intNum[i]) {
-				// System.out.println(intNum[i] + "는 소수아님");
-			} else {
+			if (index == intNum[i]) {
 				System.out.println(intNum[i] + "는 소수");
 
-			}
-
+			} 
 		}
 
 	}

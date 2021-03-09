@@ -2,7 +2,7 @@ package com.callor.student;
 
 public class Ex_06 {
 
-	// primitieve(스칼라형, 기본형)
+	// primitive(스칼라형, 기본형)
 	int num1 = 10;
 	float num2 = 10.2f;
 	double num3 = 30.0;

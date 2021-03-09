@@ -14,7 +14,7 @@ public class Ex_09 {
 			
 			StudentVO stdVO = null;
 			
-			//↓ 없으면 nullpoint exception이 나옴
+			//↓ 없으면 null point exception이 나옴
 			stdVO = new StudentVO();
 			stdList = new ArrayList<StudentVO>();
 			
