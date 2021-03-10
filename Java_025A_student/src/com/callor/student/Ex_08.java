@@ -18,8 +18,11 @@ public class Ex_08 {
 
 		for (int i = 0; i < intNum.length; i++) {
 
-			intNum[i] = rnd.nextInt(90) + 11;
-
+			intNum[i] = rnd.nextInt(91) + 10;
+		}
+		
+		for (int i = 0; i < intNum.length; i++) {
+			
 			int index = 0;
 			for (index = 2; index < intNum[i]; index++) {
 

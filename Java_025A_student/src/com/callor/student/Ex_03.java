@@ -11,7 +11,7 @@ public class Ex_03 {
 			int num = i + 1;
 			intSum += num;
 		}
-		System.out.println("1 ~ 100까지 덧헴한 결과 = " + intSum);
+		System.out.println("1 ~ 100까지 덧셈한 결과 = " + intSum);
 		
 	}
 
