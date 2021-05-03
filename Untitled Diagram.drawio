@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-05-03T05:38:17.141Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="ncn3znqUi_9cBL-SQ8vd" version="14.6.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-03T07:07:53.147Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="f1KlDLbcmIREmgROSFfv" version="14.6.9" type="github">
   <diagram id="0EiFzzbxyHH2jEoU4lUf" name="Page-1">
-    <mxGraphModel dx="1422" dy="1963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="762" dy="1716" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -40,7 +40,7 @@
           <mxGeometry x="764" y="-100" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="XE4UK99OcYWblGDHAo1M-7" value="공지사항" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="120" y="-200" width="120" height="60" as="geometry" />
+          <mxGeometry x="145" y="-197" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="XE4UK99OcYWblGDHAo1M-20" value="작성하다" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="764" width="120" height="80" as="geometry" />
@@ -162,7 +162,7 @@
         <mxCell id="XCxKxmSDBzQ981iEHBtq-6" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;rotation=-90;size=0.5;" parent="1" vertex="1">
           <mxGeometry x="363.75" y="516" width="32.5" height="435" as="geometry" />
         </mxCell>
-        <mxCell id="XCxKxmSDBzQ981iEHBtq-8" value="방종류" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="XCxKxmSDBzQ981iEHBtq-8" value="방이름" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="172.5" y="760" width="70" height="50" as="geometry" />
         </mxCell>
         <mxCell id="XCxKxmSDBzQ981iEHBtq-10" value="글번호" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=middle;fontStyle=4" parent="1" vertex="1">
@@ -248,6 +248,9 @@
         </mxCell>
         <mxCell id="N8L3zCY1wMdj2t2Cqg0a-27" value="파일이름" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="-50" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="N8L3zCY1wMdj2t2Cqg0a-28" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="194.25" y="-223.75" width="20" height="197.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
